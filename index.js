@@ -14,3 +14,12 @@ const tutorials = [
 const titleCased = () => {
   return tutorials
 }
+
+describe('titleCased()', function () {
+  it('returns an array with title case tutorial names', function () {
+    expect(titleCased()).to.have.all.members([
+      // Array of expected tutorial names in title case
+    ]);
+  });
+});
+
